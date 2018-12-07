@@ -92,16 +92,13 @@ public class LoginAndRegisterTest {
 	@Test(description = "Check if Additional pages display once user logged in", priority=2)
 
 	public void TC06() {
-		SoftAssert sa = new SoftAssert();
 		objLogin = new LoginPage(driver);
 		objLogin.clickLoginTab();
 		objLogin.Login(Constant.USERNAME, Constant.PASSWORD);
-		AssertJUnit.assertTrue(objLogin.getTab("Log out").isDisplayed(), "Tab Log out is not displayed");
+		AssertJUnit.assertEquals(objLogin.getTab("Log out").isDisplayed(), "Tab Log out is not displayed");
+		AssertJUnit.assertEquals(objLogin.getTab("Change password").isDisplayed(), "Tab Change password is not displayed");
+		AssertJUnit.assertEquals(objLogin.getTab("My ticket").isDisplayed(), "Tab My Ticket is not displayed");
 		
-		AssertJUnit.assertTrue(objLogin.getTab("Change password").isDisplayed(), "Tab Change password is not displayed");
-		
-		AssertJUnit.assertTrue(objLogin.getTab("My ticket").isDisplayed(), "Tab My Ticket is not displayed");
-		sa.assertAll();
 	}
 
 	@Test (description = "Check if user can create new account", priority=0)
