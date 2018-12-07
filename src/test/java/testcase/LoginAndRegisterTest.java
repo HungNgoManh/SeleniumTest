@@ -14,6 +14,8 @@ import Common.Constant;
 import pages.LoginPage;
 import pages.RegisterPage;
 
+//test commit
+
 public class LoginAndRegisterTest {
 	WebDriver driver;
 	LoginPage objLogin;
