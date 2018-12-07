@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'Selenium1'
+rootProject.name = 'HungNgo-Selenium1'
