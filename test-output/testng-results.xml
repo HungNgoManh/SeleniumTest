@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12446" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12446" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:50Z">
+      <class name="testcase.LoginAndRegisterTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="setup" is-config="true" duration-ms="8793" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC07()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="TC07" duration-ms="3054" started-at="2018-12-07T01:34:47Z" description="Check if user can create new account" finished-at="2018-12-07T01:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="close" is-config="true" duration-ms="583" started-at="2018-12-07T01:34:50Z" finished-at="2018-12-07T01:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.LoginAndRegisterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
