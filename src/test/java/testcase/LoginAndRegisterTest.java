@@ -1,7 +1,5 @@
 package testcase;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,10 +7,13 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+
 import Common.Constant;
+import Common.Utilities;
 import pages.LoginPage;
 import pages.RegisterPage;
+
+
 
 //test commit
 
@@ -61,8 +62,8 @@ public class LoginAndRegisterTest {
 
 		objLogin = new LoginPage(driver);
 		objLogin.clickLoginTab();
-		objLogin.Login(Constant.USERNAME, Constant.RandomPassword);
-		AssertJUnit.assertEquals(Constant.LoginErrorMessage, objLogin.GetLoginErrorMessage());
+		objLogin.Login(Constant.USERNAME, Utilities.RandomPassword());
+		AssertJUnit.assertEquals(Constant.MessageLoginPage.LoginErrorMessage, objLogin.GetLoginErrorMessage());
 
 	}
 
@@ -82,10 +83,10 @@ public class LoginAndRegisterTest {
 		objLogin.clickLoginTab();
 		
 		//Step
-		objLogin.LoginMultiTime(Constant.USERNAME, Constant.RandomPassword, 4);
+		objLogin.LoginMultiTime(Constant.USERNAME,Utilities.RandomPassword(), 4);
 		
 		//Verify: sdas
-		AssertJUnit.assertEquals(Constant.LoginAttemptError, objLogin.GetLoginErrorMessage());
+		AssertJUnit.assertEquals(Constant.MessageLoginPage.LoginAttemptError, objLogin.GetLoginErrorMessage());
 
 	}
 
@@ -107,7 +108,7 @@ public class LoginAndRegisterTest {
 
 		objRegister = new RegisterPage(driver);
 		objRegister.clickRegisterTab();
-		objRegister.RegisterNewUser(Constant.RandomEmail, Constant.PASSWORD, Constant.PASSWORD, Constant.PID);
+		objRegister.RegisterNewUser(Utilities.EmailGenerator(), Constant.PASSWORD, Constant.PASSWORD, Constant.PID);
 		AssertJUnit.assertEquals(Constant.RegisterSuccessMessage, objRegister.GetRegisterSuccessMessage());
 
 	}

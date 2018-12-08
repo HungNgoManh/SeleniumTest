@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12446" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:50Z">
+  <suite name="Default suite" duration-ms="13388" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12446" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:50Z">
+    <test name="Default test" duration-ms="13388" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:57Z">
       <class name="testcase.LoginAndRegisterTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="setup" is-config="true" duration-ms="8793" started-at="2018-12-07T01:34:38Z" finished-at="2018-12-07T01:34:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="setup" is-config="true" duration-ms="10267" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC07()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="TC07" duration-ms="3054" started-at="2018-12-07T01:34:47Z" description="Check if user can create new account" finished-at="2018-12-07T01:34:50Z">
+        <test-method status="PASS" signature="TC07()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="TC07" duration-ms="2390" started-at="2018-12-08T10:21:54Z" description="Check if user can create new account" finished-at="2018-12-08T10:21:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC07 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testcase.LoginAndRegisterTest@2a5ca609]" name="close" is-config="true" duration-ms="583" started-at="2018-12-07T01:34:50Z" finished-at="2018-12-07T01:34:50Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="close" is-config="true" duration-ms="664" started-at="2018-12-08T10:21:56Z" finished-at="2018-12-08T10:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
