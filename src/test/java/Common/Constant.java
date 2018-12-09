@@ -19,4 +19,9 @@ public class Constant {
     	public static String MessageInvalidUsernamePassword ="Invalid username or password. Please try again.";
     }
     
+    public static class MessageRegisterPage{
+        
+    	public static String MessageFormError = "There're errors in the form. Please correct the errors and try again.";
+
+    }
 }

@@ -34,6 +34,9 @@ public class RegisterPage {
 	// Register button
 	@FindBy(xpath = "//input[@title='Register']")
 	WebElement registerButton;
+	//Message Error
+	@FindBy (xpath="//p[@class='message error']")
+	WebElement MessageError;
 
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
@@ -75,6 +78,11 @@ public class RegisterPage {
 
 		return RegisterSuccessMessage.getText();
 
+	}
+	
+	public String GetMessageError () {
+		
+		return MessageError.getText(); 
 	}
 
 	// Fill all info and click Register button
