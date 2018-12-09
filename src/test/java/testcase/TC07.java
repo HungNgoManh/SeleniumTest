@@ -11,7 +11,7 @@ import pages.RegisterPage;
 public class TC07 extends TestBase {
 
 	@BeforeMethod
-	// Init Login page webdriver before starting
+	// Init Register page webdriver before starting
 	public void Initdriver() {
 
 		registerPage = new RegisterPage(driver);
