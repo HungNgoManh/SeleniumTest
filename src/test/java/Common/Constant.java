@@ -3,6 +3,7 @@ package Common;
 
 public class Constant {
 
+	public static String URLTest="http://logigearrailway.somee.com";
 	public static String USERNAME = "hung.ngo.test@gmail.com";
 	public static String PASSWORD = "12345678";
 	public static String WelcomeText = "Welcome "+ USERNAME;

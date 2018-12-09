@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13388" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:57Z">
+  <suite name="Default suite" duration-ms="9427" started-at="2018-12-09T04:10:29Z" finished-at="2018-12-09T04:10:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13388" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:57Z">
-      <class name="testcase.LoginAndRegisterTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="setup" is-config="true" duration-ms="10267" started-at="2018-12-08T10:21:44Z" finished-at="2018-12-08T10:21:54Z">
+    <test name="Default test" duration-ms="9427" started-at="2018-12-09T04:10:29Z" finished-at="2018-12-09T04:10:38Z">
+      <class name="testcase.TC07">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.TC07@13c27452]" name="beforeClass" is-config="true" duration-ms="6297" started-at="2018-12-09T04:10:29Z" finished-at="2018-12-09T04:10:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC07()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="TC07" duration-ms="2390" started-at="2018-12-08T10:21:54Z" description="Check if user can create new account" finished-at="2018-12-08T10:21:56Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Initdriver()[pri:0, instance:testcase.TC07@13c27452]" name="Initdriver" is-config="true" duration-ms="38" started-at="2018-12-09T04:10:35Z" finished-at="2018-12-09T04:10:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC07 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testcase.LoginAndRegisterTest@371a67ec]" name="close" is-config="true" duration-ms="664" started-at="2018-12-08T10:21:56Z" finished-at="2018-12-08T10:21:57Z">
+        </test-method> <!-- Initdriver -->
+        <test-method status="PASS" signature="TC_07()[pri:0, instance:testcase.TC07@13c27452]" name="TC_07" duration-ms="2495" started-at="2018-12-09T04:10:35Z" description="Check if user can create new account" finished-at="2018-12-09T04:10:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- testcase.LoginAndRegisterTest -->
+        </test-method> <!-- TC_07 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.TC07@13c27452]" name="afterClass" is-config="true" duration-ms="579" started-at="2018-12-09T04:10:38Z" finished-at="2018-12-09T04:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcase.TC07 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

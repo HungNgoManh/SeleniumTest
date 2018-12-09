@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -89,6 +90,8 @@ public class LoginPage {
 		// Fill password
 		this.setPassword(strPasword);
 		// Click Login button
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		this.clickLoginButton();
 	}
 
@@ -96,6 +99,12 @@ public class LoginPage {
 
 		return LoginErrorMessage.getText();
 
+	}
+	
+	public void ClearTextBox () {
+		
+		UID.clear();
+		password.clear();
 	}
 
 	public String GetEmailContact() {
@@ -105,7 +114,8 @@ public class LoginPage {
 	}
 
 	public void LoginMultiTime(String strUserName, String strPasword, int time) {
-
+		
+		ClearTextBox();
 		for (int i = 1; i <= time; i++) {
 			Login(strUserName, strPasword);
 		}
