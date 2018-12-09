@@ -20,7 +20,7 @@ public class TC02_TC03_TC05 extends TestBase {
 	@Test(description = "Test Login with blank user name")
 	public void TC02() {
 		/*
-		 * Step 1: Init Login Page driver and start chrome was done in BeforeMethod.
+		 * Step 1: Init Login Page driver and start chrome were done in BeforeMethod.
 		 */
 		// Step 2: Click Login Tab
 		loginPage.clickLoginTab();
@@ -28,7 +28,7 @@ public class TC02_TC03_TC05 extends TestBase {
 		loginPage.Login("", Constant.PASSWORD);
 		// VP: User can't login and message "There was a problem with your login and/or
 		// errors exist in your form. " appears.
-		AssertJUnit.assertEquals(Constant.MessageLoginPage.LoginErrorMessage, loginPage.GetLoginErrorMessage());
+		AssertJUnit.assertEquals(Constant.MessageLoginPage.MessageLoginError, loginPage.GetLoginErrorMessage());
 
 	}
 
@@ -42,7 +42,7 @@ public class TC02_TC03_TC05 extends TestBase {
 		loginPage.Login(Constant.USERNAME, Utilities.RandomPassword());
 		// VP: Error message "There was a problem with your login and/or errors exist in
 		// your form." is displayed
-		AssertJUnit.assertEquals(Constant.MessageLoginPage.LoginErrorMessage, loginPage.GetLoginErrorMessage());
+		AssertJUnit.assertEquals(Constant.MessageLoginPage.MessageLoginError, loginPage.GetLoginErrorMessage());
 
 	}
 
@@ -58,7 +58,7 @@ public class TC02_TC03_TC05 extends TestBase {
 		// VP: User can't login and message "You have used 4 out of 5 login attempts.
 		// After all 5 have been used, you will be unable to login for 15 minutes."
 		// appears.
-		AssertJUnit.assertEquals(Constant.MessageLoginPage.LoginAttemptError, loginPage.GetLoginErrorMessage());
+		AssertJUnit.assertEquals(Constant.MessageLoginPage.MessageLoginAttemptError, loginPage.GetLoginErrorMessage());
 
 	}
 

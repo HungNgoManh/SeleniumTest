@@ -20,7 +20,7 @@ public class TC07 extends TestBase {
 	@Test(description = "Check if user can create new account")
 	public void TC_07() {
 		/*
-		 * Step 1: Init Login Page driver and start chrome was done in BeforeMethod.
+		 * Step 1: Init Login Page driver and start chrome were done in BeforeMethod.
 		 */
 		// Step 2: Click Register Tab
 		registerPage.clickRegisterTab();
@@ -29,7 +29,7 @@ public class TC07 extends TestBase {
 		registerPage.RegisterNewUser(Utilities.EmailGenerator(), Constant.PASSWORD, Constant.PASSWORD, Constant.PID);
 		// VP: New account is created and message "Thank you for registering your
 		// account" appears.
-		AssertJUnit.assertEquals(Constant.RegisterSuccessMessage, registerPage.GetRegisterSuccessMessage());
+		AssertJUnit.assertEquals(Constant.MessageRegisterSuccess, registerPage.GetRegisterSuccessMessage());
 
 	}
 }

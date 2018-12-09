@@ -21,7 +21,7 @@ public class TC01_TC04 extends TestBase {
 	@Test(description = "Test Login success with correct welcome message", priority = 1)
 	public void TC01() {
 		/*
-		 * Step 1: Init Login Page driver and start chrome was done in BeforeMethod. 
+		 * Step 1: Init Login Page driver and start chrome were done in BeforeMethod. 
 		 */
 		// Step 2: Click Login Tab
 		loginPage.clickLoginTab();

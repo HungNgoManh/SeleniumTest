@@ -20,7 +20,7 @@ public class TC06 extends TestBase {
 
 	public void TC_06() {
 		/*
-		 * Step 1: Init Login Page driver and start chrome was done in BeforeMethod. 
+		 * Step 1: Init Login Page driver and start chrome were done in BeforeMethod. 
 		 */
 		//Step 2: 
 		loginPage.clickLoginTab();

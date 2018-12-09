@@ -80,7 +80,6 @@ public class RegisterPage {
 	// Fill all info and click Register button
 	public void RegisterNewUser(String strUserEmail, String strPassword, String strPassword2, String PID) {
 		
-		
 		this.setUserEmail(strUserEmail);
 		this.setPassword(strPassword);
 		this.setPasswordConfirm(strPassword2);
