@@ -15,6 +15,7 @@ public class TC07 extends TestBase {
 	public void Initdriver() {
 
 		registerPage = new RegisterPage(driver);
+	
 	}
 
 	@Test(description = "Check if user can create new account")
@@ -30,6 +31,7 @@ public class TC07 extends TestBase {
 		// VP: New account is created and message "Thank you for registering your
 		// account" appears.
 		AssertJUnit.assertEquals(Constant.MessageRegisterSuccess, registerPage.GetRegisterSuccessMessage());
-
-	}
+		 
+	}	
+	 
 }

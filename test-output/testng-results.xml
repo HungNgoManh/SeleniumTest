@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9255" started-at="2018-12-09T03:04:48Z" finished-at="2018-12-09T03:04:57Z">
+  <suite name="Default suite" duration-ms="15429" started-at="2018-12-10T10:26:48Z" finished-at="2018-12-10T10:27:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9255" started-at="2018-12-09T03:04:48Z" finished-at="2018-12-09T03:04:57Z">
-      <class name="testcase.TC10">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.TC10@13c27452]" name="beforeClass" is-config="true" duration-ms="6866" started-at="2018-12-09T03:04:48Z" finished-at="2018-12-09T03:04:55Z">
+    <test name="Default test" duration-ms="15429" started-at="2018-12-10T10:26:48Z" finished-at="2018-12-10T10:27:04Z">
+      <class name="testcase.TC07">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.TC07@50d0686]" name="beforeClass" is-config="true" duration-ms="7133" started-at="2018-12-10T10:26:48Z" finished-at="2018-12-10T10:26:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Initdriver()[pri:0, instance:testcase.TC10@13c27452]" name="Initdriver" is-config="true" duration-ms="18" started-at="2018-12-09T03:04:55Z" finished-at="2018-12-09T03:04:55Z">
+        <test-method status="PASS" signature="Initdriver()[pri:0, instance:testcase.TC07@50d0686]" name="Initdriver" is-config="true" duration-ms="37" started-at="2018-12-10T10:26:55Z" finished-at="2018-12-10T10:26:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initdriver -->
-        <test-method status="PASS" signature="TC_10()[pri:0, instance:testcase.TC10@13c27452]" name="TC_10" duration-ms="1763" started-at="2018-12-09T03:04:55Z" description="User can&#039;t create account with &quot;Confirm password&quot; is not the same with &quot;Password&quot;" finished-at="2018-12-09T03:04:57Z">
+        <test-method status="PASS" signature="TC_07()[pri:0, instance:testcase.TC07@50d0686]" name="TC_07" duration-ms="7538" started-at="2018-12-10T10:26:55Z" description="Check if user can create new account" finished-at="2018-12-10T10:27:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.TC10@13c27452]" name="afterClass" is-config="true" duration-ms="590" started-at="2018-12-09T03:04:57Z" finished-at="2018-12-09T03:04:57Z">
+        </test-method> <!-- TC_07 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.TC07@50d0686]" name="afterClass" is-config="true" duration-ms="700" started-at="2018-12-10T10:27:03Z" finished-at="2018-12-10T10:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testcase.TC10 -->
+      </class> <!-- testcase.TC07 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
